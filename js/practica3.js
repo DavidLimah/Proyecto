@@ -34,7 +34,8 @@ function factorial(){
 function mostrarFecha(){
 	let dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 	let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-	let dia; 
+	let hoy;
+    let dia; 
 	let mes; 
 	let anio;
 	let fecha = new Date();
