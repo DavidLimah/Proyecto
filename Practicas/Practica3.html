@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/practica3.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Práctica III JS</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Práctica III - JavaScript</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-2 col-s-6"></div>
+
+        <div class="col-8 col-s-12">
+            <h1>Ejercicios JavaScript</h1>
+
+            <p><b>1.-</b> Desarrolle una función en JavaScript que permita leer 3
+                números y devuelva el producto de los tres números.
+                Ejemplo. N1= 5; N2=2 ; N3=6 5*2*6 Resultado = 60</p>
+            <div class="box_frame">
+                <form action="">
+                    <label for="">Ingrese nro. </label><input type="text" id="num1"><br>
+                    <label for="">Ingrese nro. </label><input type="text" id="num2"><br>
+                    <label for="">Ingrese nro. </label><input type="text" id="num3"><br>
+                    <input type="button" value="Calcular" id="btn" onclick="producto();">
+                    <input type="text" id="resp">
+                </form>
+            </div>
+
+            <p><b>2.-</b> Desarrolle una función en JavaScript que permita leer una
+                temperatura en grados Celsius y devuelva el clima según la
+                siguiente tabla:<br>
+                Temperatura &nbsp; Clima <br>
+                -10 °C – 15 °C &nbsp; Frio <br>
+                16°C – 25 °C &nbsp; Templado <br>
+                26°C – 40 °C &nbsp; Calor <br>
+                Ejemplo. Temperatura = 20 Resultado = Templado
+            </p>
+            <div class="box_frame" id="Ej_2">
+                <form action="">
+                    <label for="">Temperatura </label><input type="text" id="temp"><br>
+                    <input type="button" value="Calcular" onclick="temperatura();">
+                    <input type="text" id="resp_temp">
+                </form>
+            </div>
+
+            <p><b>3.-</b> Desarrolle una función en JavaScript que permita leer un
+                numero y devuelva el factorial del mismo.
+                Ejemplo. N= 5 Proceso 1*2*3*4*5 Resultado = 120
+            </p>
+            <div class="box_frame" id="Ej_3">
+                <form action="">
+                    <label for="">Ingrese nro. </label><input type="text" id="fact"><br>
+                    <input type="button" value="Calcular" onclick="factorial();">
+                    <input type="text" id="resp_fact">
+                </form>
+            </div>
+
+            <p><b>4.-</b> Desarrolle una función en JavaScript que muestre la fecha
+                actual.
+                Ejemplo: Mates, 24 de Agosto del 2021
+            </p>
+            <div class="box_frame" id="Ej_4">
+                <button onclick="mostrarFecha();">Mostrar fecha</button>
+                <p id="fecha">...</p>
+            </div>
+
+        </div>
+
+        <div class="col-3 col-s-12"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; David Lima - Tecnología Web I - UPDS</p>
+    </div>
+
+    <script src="../js/practica3.js"></script>
+
+</body>
+
+</html>
